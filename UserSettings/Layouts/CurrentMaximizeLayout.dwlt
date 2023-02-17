@@ -24,7 +24,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 27761
+=======
+  controlID: 26566
+>>>>>>> 6d7f1e9c614d19a58d56afffbbb605c62e18f9df
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +150,11 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 27705
+=======
+  controlID: 26496
+>>>>>>> 6d7f1e9c614d19a58d56afffbbb605c62e18f9df
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -171,7 +179,11 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
+<<<<<<< HEAD
   controlID: 27696
+=======
+  controlID: 26487
+>>>>>>> 6d7f1e9c614d19a58d56afffbbb605c62e18f9df
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,8 +245,13 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 50.666687}
       m_SelectedIDs: 
+=======
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 1e3ffeff
+>>>>>>> 6d7f1e9c614d19a58d56afffbbb605c62e18f9df
       m_LastClickedID: 0
       m_ExpandedIDs: 3037feff3437feff1438feff1838feff1c38feff2838feff8c38feff9838feffc038feffc438feffc838feffdc38fefff038fefff438fefff838fefffe38feffd6a4feff20a5feff4aa8feffaaa9feffbeee0000
       m_RenameOverlay:
@@ -604,9 +621,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -15.815326, y: 1.3825065, z: -10.07411}
     speed: 2
     m_Value: {x: -15.815326, y: 1.3825065, z: -10.07411}
+=======
+    m_Target: {x: -15.553232, y: -0.5679672, z: -7.293789}
+    speed: 2
+    m_Value: {x: -15.553232, y: -0.5679672, z: -7.293789}
+>>>>>>> 6d7f1e9c614d19a58d56afffbbb605c62e18f9df
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -652,6 +675,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.020190137, y: 0.7614555, z: 0.023768362, w: -0.6475046}
     speed: 2
     m_Value: {x: 0.020189641, y: 0.76143676, z: 0.023767779, w: -0.6474887}
@@ -659,13 +683,27 @@ MonoBehaviour:
     m_Target: 10.98051
     speed: 2
     m_Value: 10.98051
+=======
+    m_Target: {x: -0.04052282, y: 0.7057497, z: -0.040482484, w: -0.70617235}
+    speed: 2
+    m_Value: {x: -0.040521953, y: 0.70573455, z: -0.040481616, w: -0.7061572}
+  m_Size:
+    m_Target: 10.323673
+    speed: 2
+    m_Value: 10.323673
+>>>>>>> 6d7f1e9c614d19a58d56afffbbb605c62e18f9df
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
+<<<<<<< HEAD
     m_Speed: 0.30084997
     m_SpeedNormalized: 0.14999999
+=======
+    m_Speed: 0.18090999
+    m_SpeedNormalized: 0.089999996
+>>>>>>> 6d7f1e9c614d19a58d56afffbbb605c62e18f9df
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -812,7 +850,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
   m_Name: ProjectBrowser
+=======
+  m_Name: ConsoleWindow
+>>>>>>> 6d7f1e9c614d19a58d56afffbbb605c62e18f9df
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -821,15 +863,26 @@ MonoBehaviour:
     y: 775.3333
     width: 1956
     height: 532.00006
+<<<<<<< HEAD
   m_MinSize: {x: 230, y: 250}
   m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 12}
+=======
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
+>>>>>>> 6d7f1e9c614d19a58d56afffbbb605c62e18f9df
   m_Panes:
   - {fileID: 12}
   - {fileID: 13}
   - {fileID: 14}
+<<<<<<< HEAD
   m_Selected: 0
   m_LastSelected: 1
+=======
+  m_Selected: 1
+  m_LastSelected: 0
+>>>>>>> 6d7f1e9c614d19a58d56afffbbb605c62e18f9df
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -876,23 +929,29 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/SkySeries Freebie/FreebieHdri
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/SkySeries Freebie/FreebieHdri
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\1027859\Desktop\Weekly Activities
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: f4050000
     m_LastClickedID: 1524
     m_ExpandedIDs: 00000000f405000020f2000024f20000e0f60000f0f60000f8f6000000ca9a3b
+=======
+    m_SelectedIDs: 08da0100
+    m_LastClickedID: 121352
+    m_ExpandedIDs: 00000000f405000020f2000024f20000e0f60000f0f60000f8f6000000da010000ca9a3b
+>>>>>>> 6d7f1e9c614d19a58d56afffbbb605c62e18f9df
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -945,8 +1004,13 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+=======
+    m_SelectedInstanceIDs: 1e3ffeff
+    m_LastClickedInstanceID: -114914
+>>>>>>> 6d7f1e9c614d19a58d56afffbbb605c62e18f9df
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -1069,7 +1133,11 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 27762
+=======
+  controlID: 26567
+>>>>>>> 6d7f1e9c614d19a58d56afffbbb605c62e18f9df
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1135,7 +1203,11 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
+<<<<<<< HEAD
   m_LastInspectedObjectInstanceID: -1
+=======
+  m_LastInspectedObjectInstanceID: -114914
+>>>>>>> 6d7f1e9c614d19a58d56afffbbb605c62e18f9df
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
