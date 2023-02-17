@@ -21,16 +21,36 @@ public class Character : MonoBehaviour
         transform.position += transform.forward * Input.GetAxis("Vertical") * 10 * Time.deltaTime;
         transform.position += transform.right * Input.GetAxis("Horizontal") * 10 * Time.deltaTime;
 
+        if(Input.GetAxis("Vertical")!=0 || Input.GetAxis("Horizontal") != 0)
+        {
+            GetComponent<Animator>().SetBool("Walking", true);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("Walking", false);
+        }
+
         if (Input.GetKeyDown(KeyCode.Space) && CanJump)
         {
+            GetComponent<Animator>().SetBool("Jump", true);
             CanJump = false;
             gameObject.GetComponent<Rigidbody>().AddForce(transform.up * 250);
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            GetComponent<Animator>().SetBool("Attack", true);
         }
 
         //Cam.transform.Rotate(-Input.GetAxis("Mouse Y"), 0, 0);
         Cam.transform.RotateAround(gameObject.transform.position, transform.right, -Input.GetAxis("Mouse Y"));
 
         gameObject.transform.Rotate(0, Input.GetAxis("Mouse X") * 6, 0);
+
+        if (CanJump)
+        {
+            GetComponent<Animator>().SetBool("Jump", false);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -39,6 +59,11 @@ public class Character : MonoBehaviour
         {
             CanJump = true;
         }
+    }
+
+    public void AttackDone()
+    {
+        GetComponent<Animator>().SetBool("Attack", false);
     }
 
 }
