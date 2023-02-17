@@ -146,7 +146,7 @@ AnimationClip:
     path: HumanMale_Character_Free/Armature/Root_M/Spine1_M
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -194,7 +194,7 @@ AnimationClip:
     path: HumanMale_Character_Free/Armature/Root_M/Spine1_M
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -242,7 +242,7 @@ AnimationClip:
     path: HumanMale_Character_Free/Armature/Root_M/Spine1_M
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   m_EulerEditorCurves:
   - serializedVersion: 2
     curve:
