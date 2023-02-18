@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2098966184}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 262.18533, g: 324.8582, b: 429.96686, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -283,7 +283,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
+  m_RayTracingMode: 3
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
@@ -388,7 +388,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
+  m_RayTracingMode: 3
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -494,7 +494,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
+  m_RayTracingMode: 3
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
@@ -686,9 +686,105 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3618513874735438167, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513874796022069, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513874967644963, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513875022550940, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513875228316179, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513875561495211, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513875663598437, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513875753419754, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3618513875830163090, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513875977212689, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513875982458869, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513876118655885, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513876231254480, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513876456970438, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513876521455718, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513876531607778, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513876616162513, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513876616162515, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513876637163837, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513876637163839, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513876658636834, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513876667765525, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513876667765531, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513876704143236, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618513876719822193, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8573579237865985279, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
       propertyPath: m_Name

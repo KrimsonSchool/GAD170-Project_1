@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cf1dab834d4ec34195b920ea7bbf9ec, type: 3}
-  m_Name: New HDRenderPipelineAsset
+  m_Name: Main
   m_EditorClassIdentifier: 
   m_RenderPipelineSettings:
     supportShadowMask: 1
@@ -33,7 +33,7 @@ MonoBehaviour:
     supportTransparentBackface: 1
     supportTransparentDepthPrepass: 1
     supportTransparentDepthPostpass: 1
-    colorBufferFormat: 74
+    colorBufferFormat: 48
     supportCustomPass: 1
     customBufferFormat: 8
     supportedLitShaderMode: 2
@@ -60,7 +60,7 @@ MonoBehaviour:
     supportProbeVolumeStreaming: 0
     probeVolumeSHBands: 1
     supportRayTracing: 1
-    supportedRayTracingMode: 3
+    supportedRayTracingMode: 2
     lightLoopSettings:
       cookieAtlasSize: 2048
       cookieFormat: 74

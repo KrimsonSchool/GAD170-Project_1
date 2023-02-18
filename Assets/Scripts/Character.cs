@@ -6,6 +6,7 @@ public class Character : MonoBehaviour
 {
     [HideInInspector] public GameObject Cam;
     bool CanJump;
+    public float Speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +19,8 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += transform.forward * Input.GetAxis("Vertical") * 10 * Time.deltaTime;
-        transform.position += transform.right * Input.GetAxis("Horizontal") * 10 * Time.deltaTime;
+        transform.position += transform.forward * Input.GetAxis("Vertical") * Speed * Time.deltaTime;
+        transform.position += transform.right * Input.GetAxis("Horizontal") * Speed * Time.deltaTime;
 
         if(Input.GetAxis("Vertical")!=0 || Input.GetAxis("Horizontal") != 0)
         {
