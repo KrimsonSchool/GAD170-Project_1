@@ -568,12 +568,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   volumeAnchorOverride: {fileID: 0}
-  antialiasing: 3
+  antialiasing: 2
   SMAAQuality: 2
   dithering: 0
   stopNaNs: 0
   taaSharpenStrength: 0.5
-  TAAQuality: 1
+  TAAQuality: 2
   taaHistorySharpening: 0.35
   taaAntiFlicker: 0.5
   taaMotionVectorRejection: 0
@@ -786,6 +786,10 @@ PrefabInstance:
       propertyPath: m_RayTracingMode
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8573579237857097577, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: Speed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8573579237865985279, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
       propertyPath: m_Name
       value: Character
@@ -845,6 +849,10 @@ PrefabInstance:
     - target: {fileID: 8573579238105101562, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
       propertyPath: m_AllowMSAA
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573579238105101562, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
+      propertyPath: field of view
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8573579238105101562, guid: 0e40f0a5f0b56d14c96c97d8e0480ac7, type: 3}
       propertyPath: near clip plane
