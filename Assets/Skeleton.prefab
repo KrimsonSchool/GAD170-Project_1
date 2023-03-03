@@ -808,7 +808,7 @@ Transform:
   - {fileID: 3284721457751897467}
   - {fileID: 1487584262}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &3284721457760918235
 Animator:
@@ -864,10 +864,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.1950935
+  m_Radius: 0.41286638
   m_Height: 2.5413542
   m_Direction: 1
-  m_Center: {x: 0, y: 1.2697965, z: 0.0014730863}
+  m_Center: {x: -0.009859971, y: 1.2697965, z: 0.0014730863}
 --- !u!54 &3284721457046047979
 Rigidbody:
   m_ObjectHideFlags: 0
