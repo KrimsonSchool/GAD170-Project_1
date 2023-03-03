@@ -844,6 +844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ATTACK: 1
   HealthIndicator: {fileID: 1487584261}
+  speed: 1
 --- !u!136 &3284721457046047978
 CapsuleCollider:
   m_ObjectHideFlags: 0

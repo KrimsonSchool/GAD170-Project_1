@@ -9,6 +9,7 @@ public class Skeleton : MonoBehaviour
     public GameObject HealthIndicator;
     int hpcheck;
     float checktimer;
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +30,7 @@ public class Skeleton : MonoBehaviour
         if (Vector3.Distance(target.position, transform.position) > 1)
         {
             attacktimer = 0;
-            transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime * speed);
 
             GetComponent<Animator>().SetBool("Attack", false);
         }
@@ -52,31 +53,10 @@ public class Skeleton : MonoBehaviour
         if (attacktimer >= 1)
         {
 
+            FindObjectOfType<Character>().Hp -= ATTACK;
             attacktimer = 0;
 
-            int layerMask = 1 << 8;
-            layerMask = ~layerMask;
 
-            RaycastHit hit;
-            if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
-            {
-                Debug.DrawRay(new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-                Debug.Log("Did Hit at " + hit.distance);
-
-                if (hit.collider.gameObject.GetComponent<Character>() != null)
-                {
-                    if (hit.distance <= 1)
-                    {
-                        hit.collider.gameObject.GetComponent<Character>().Hp -= ATTACK;
-                    }
-                }
-            }
-            else
-            {
-                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.white);
-            }
-
-           
         }
 
         if (hpcheck != GetComponent<Health>().Hp)

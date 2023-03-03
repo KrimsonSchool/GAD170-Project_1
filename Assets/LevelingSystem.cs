@@ -6,8 +6,8 @@ using TMPro;
 public class LevelingSystem : MonoBehaviour
 {
     [HideInInspector] public int Level;
-    [HideInInspector] public int Xp;
-    [HideInInspector] public int XpTo;
+     public int Xp;
+     public int XpTo;
     public TMPro.TextMeshProUGUI LevelText;
     // Start is called before the first frame update
     void Start()
@@ -22,8 +22,8 @@ public class LevelingSystem : MonoBehaviour
 
         if (Xp >= XpTo)
         {
-            XpTo = Mathf.RoundToInt(XpTo * 1.1f);
             Xp -= XpTo;
+            XpTo = Mathf.RoundToInt(XpTo * 1.1f);
             Level += 1;
             FindObjectOfType<StatsSystem>().AssignPoints += 4;
             FindObjectOfType<StatsSystem>().Assign();
