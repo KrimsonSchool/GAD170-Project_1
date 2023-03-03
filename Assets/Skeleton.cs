@@ -46,17 +46,14 @@ public class Skeleton : MonoBehaviour
 
         if (GetComponent<Health>().Hp <= 0)
         {
-            Destroy(gameObject);
             FindObjectOfType<LevelingSystem>().Xp += Mathf.RoundToInt(5 * (FindObjectOfType<StatsSystem>().Luck * 0.25f));
+            Destroy(gameObject);
         }
 
         if (attacktimer >= 1)
         {
-
             FindObjectOfType<Character>().Hp -= ATTACK;
             attacktimer = 0;
-
-
         }
 
         if (hpcheck != GetComponent<Health>().Hp)
