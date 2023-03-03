@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Tree : MonoBehaviour
 {
-    public int Health;
     public GameObject[] Drop;
     // Start is called before the first frame update
     void Start()
@@ -15,7 +14,7 @@ public class Tree : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Health<= 0)
+        if(GetComponent<Health>().Hp<= 0)
         {
             for (int i = 0; i < Drop.Length; i++)
             {
@@ -28,7 +27,7 @@ public class Tree : MonoBehaviour
     {
         if(other.tag == "Attack")
         {
-            Health -= FindObjectOfType<Character>().Attack;
+            GetComponent<Health>().Hp -= FindObjectOfType<Character>().Attack;
         }
     }
 }

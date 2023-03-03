@@ -21,18 +21,18 @@ public class WeekThree : MonoBehaviour
         Power = Mathf.RoundToInt((strength * 2) + (agility * 1.5f) + intelligence);
         Power2 = Mathf.RoundToInt((strength2 * 2) + (agility2 * 1.5f) + intelligence2);
 
-        print(Power);
+        //print(Power);
         if(Power2 == Power)
         {
-            print("The 2 champions are equally matched!");
+            //print("The 2 champions are equally matched!");
         }
         else if(Power2 > Power)
         {
-            print("Player 2 is more powerful!");
+           //print("Player 2 is more powerful!");
         }
         else
         {
-            print("Player 1 is more powerful!");
+            //print("Player 1 is more powerful!");
         }
     }
 

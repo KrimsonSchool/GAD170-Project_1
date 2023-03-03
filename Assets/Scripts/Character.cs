@@ -45,6 +45,28 @@ public class Character : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             GetComponent<Animator>().SetBool("Attack", true);
+
+            int layerMask = 1 << 8;
+            layerMask = ~layerMask;
+
+            RaycastHit hit;
+            if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y+1, transform.position.z), transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
+            {
+                Debug.DrawRay(new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+                Debug.Log("Did Hit at " + hit.distance);
+
+                if(hit.collider.gameObject.tag == "target")
+                {
+                    if(hit.distance <= 1)
+                    {
+                        hit.collider.gameObject.GetComponent<Health>().Hp -= Attack;
+                    }
+                }
+            }
+            else
+            {
+                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.white);
+            }
         }
 
         //Cam.transform.Rotate(-Input.GetAxis("Mouse Y"), 0, 0);
@@ -57,7 +79,7 @@ public class Character : MonoBehaviour
             GetComponent<Animator>().SetBool("Jump", false);
         }
 
-        
+        Attack = Mathf.RoundToInt(FindObjectOfType<StatsSystem>().Strength * 0.4f + FindObjectOfType<StatsSystem>().Intelligence * 0.2f * FindObjectOfType<LevelingSystem>().Level * 0.1f) + 2;
     }
 
     void Pickup()
