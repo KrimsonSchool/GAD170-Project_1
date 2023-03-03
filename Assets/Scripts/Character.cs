@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Character : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class Character : MonoBehaviour
     public int Attack;
     GameObject otr;
     int i;
+    public int Hp;
+    public int MaxHp;
+    public TMPro.TextMeshProUGUI HpText;
     // Start is called before the first frame update
     void Start()
     {
@@ -79,7 +83,11 @@ public class Character : MonoBehaviour
             GetComponent<Animator>().SetBool("Jump", false);
         }
 
-        Attack = Mathf.RoundToInt(FindObjectOfType<StatsSystem>().Strength * 0.4f + FindObjectOfType<StatsSystem>().Intelligence * 0.2f * FindObjectOfType<LevelingSystem>().Level * 0.1f) + 2;
+        Attack = Mathf.RoundToInt(FindObjectOfType<StatsSystem>().Strength * 0.4f + FindObjectOfType<StatsSystem>().Intelligence * 0.2f * FindObjectOfType<LevelingSystem>().Level * 0.1f) + 1;
+
+        HpText.text = "HP : " + Hp;
+
+        MaxHp = 10 + Mathf.RoundToInt(GetComponent<StatsSystem>().Endurance * 0.8f);
     }
 
     void Pickup()

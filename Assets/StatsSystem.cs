@@ -58,5 +58,7 @@ public class StatsSystem : MonoBehaviour
 
         print("Int = " + Intelligence + " Agil = " + Agility + " Str = " + Strength + " Luck = " + Luck + " End = " + Endurance);
         print("Points Left = " + AssignPoints);
+        GetComponent<Character>().MaxHp = 10 + Mathf.RoundToInt(Endurance * 0.8f);
+        GetComponent<Character>().Hp = GetComponent<Character>().MaxHp;
     }
 }

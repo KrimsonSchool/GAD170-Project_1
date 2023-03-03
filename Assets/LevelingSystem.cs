@@ -12,7 +12,6 @@ public class LevelingSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         XpTo = 20;
     }
 
