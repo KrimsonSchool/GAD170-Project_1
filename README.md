@@ -1,2 +1,2 @@
 # GAD170-Weekly-Activities
-My weekly activities for GAD170
+My project 1 for GAD170
