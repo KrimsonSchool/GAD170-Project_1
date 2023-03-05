@@ -7,16 +7,16 @@ using static UnityEditor.PlayerSettings;
 
 public class Week2Activity : MonoBehaviour
 {
-    string FavGame;
-    int Hours;
-    float Price;
+    string favGame;
+    int hours;
+    float price;
     // Start is called before the first frame update
     void Start()
     {
-        FavGame = "Death Stranding";
-        Price = 80;
-        Hours = 67;
-        print("My Favourite game is " + FavGame + ", and i have played it for " + Hours + " hours, it cost me $" + Price + ", therfore my value of dollar per hour is $" + (Hours / Price) + " / hour");
+        favGame = "Death Stranding";
+        price = 80;
+        hours = 67;
+        print("My Favourite game is " + favGame + ", and i have played it for " + hours + " hours, it cost me $" + price + ", therfore my value of dollar per hour is $" + (hours / price) + " / hour");
 
         float rng = Random.Range(1, 11);
 
@@ -42,7 +42,7 @@ public class Week2Activity : MonoBehaviour
         {
             print("the number was greater than one and less than 5; or the number was greater than 5");
         }
-        Debug.Log("My Favourite game is " + FavGame + ", and i have played it for " + Hours + " hours, it cost me $" + Price + ", therfore my value of dollar per hour is $" + (Hours / Price) + " / hour");
+        Debug.Log("My Favourite game is " + favGame + ", and i have played it for " + hours + " hours, it cost me $" + price + ", therfore my value of dollar per hour is $" + (hours / price) + " / hour");
     }
 
     // Update is called once per frame
