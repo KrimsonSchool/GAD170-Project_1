@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
+    //unused script for the rain
     float timer;
     Vector3 pos;
     // Start is called before the first frame update
